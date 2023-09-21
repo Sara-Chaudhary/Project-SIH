@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIRD EYE </title>
+  <link rel="stylesheet" href="/Css-Files/04-main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</head>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+</script>
+
+<body class="bg-dark">
+
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 0, 0);">
+    <div class="container-fluid">
+      <nav class="navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </nav>
+      <a class="navbar-brand" style="color: white;" href="#">THIRD EYE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/HTML files/04-main.html"
+              style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML files/06-why.html" style="color: white;">Why</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML files/05-about.html" style="color: white;">About</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-info mx2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Log Out
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-dark">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Log Out</h1>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>Are You Sure You Want To Log Out</h3>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-success" href="/HTML files/01-first.html">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="container my-5">
+    <div class="p-5 text-center rounded-5 ">
+      <h1 class="text-emphasis text-white">Welcome To Third Eye</h1>
+      <p class="lead text-emphasis text-white"><strong>
+        <br>
+        In the digital age, our online presence has become an integral part of our lives. Whether for social networking,
+        dating, or professional networking, we rely on online profiles to connect with others. However, with the rise of
+        online interactions, so too has the prevalence of fake profiles and identity theft.
+        <br><br>
+        We understand the need for a safer online experience, which is why we are proud to introduce ThirdEye – the
+        cutting-edge application designed to detect and report fake profiles, ensuring a more secure and genuine online
+        community for all.
+        </strong>
+      </p>
+    </div>
+  </div>
+  <div class="container px-4 py-3">
+    <div class="container my-5">
+      <div class="p-5 text-center bg-info bg-gradient bg-opacity-75 rounded-5">
+        <h1 class="text-emphasis text-light">Want To Check A Profile ...</h1>
+        <p class="lead text-white">
+          Simply Fill the form given below to and we will let you know
+        </p><br>
+        <form class="row g-3">
+          <div class="col-12">
+            <div class="input-group">
+              <span class="input-group-text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">URL *</span>
+              <input type="url" class="form-control" id="validationDefaultUsername"
+                aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <span class="input-group-text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">Username
+                *</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"
+                aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <span class="input-group-text text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">Last
+                active </span>
+              <input type="text" class="form-control" id="validationDefaultUsername"
+                aria-describedby="inputGroupPrepend2">
+            </div>
+
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <span class="input-group-text text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">Platform
+                *</span>
+              <select class="form-select" id="validationDefault04" required>
+                <option>...</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Snapchat</option>
+                <option>X</option>
+              </select>
+            </div>
+            <div>
+              <p class="text-white"><br>Entries with <spam class="p-2">*</spam> are compulsory to be filled</p>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-outline-light" type="submit">Check Profile</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/HTML files/01-first.html"
+                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img src="/images/logo.png" class="footer-logo rounded-5 p-2">
+                </a>
+                <span class="mb-3 mb-md-0 text-white">Made By : Byte Benders </span>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+
+</html>
