@@ -6,3 +6,17 @@
   .footer-logo{
     width: 50px;
   }
+  .box{
+    appearance: none;
+    width: 1059px;
+    color: white;
+    background-color: rgb(64, 66, 70);
+    font-size: 21px;
+    border-bottom: 2px;
+  }
+  .select-box{
+    border: none;
+    width: 1059px;
+    padding: 0 30px 0 15px;
+    border-radius: 5px;
+  }

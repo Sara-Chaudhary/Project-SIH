@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THIRD EYE </title>
-  <link rel="stylesheet" href="/Css-Files/04-main.css">
+  <link rel="stylesheet" href="/Project-SIH/Css-Files/04-main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -18,37 +24,24 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
 </head>
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (() => {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()
-</script>
-
-<body class="bg-dark">
+<style>
+  .op {
+    border-width: 1px;
+    border-color: white;
+  }
+  .bdy{
+    background-image:url(https://wallpapercave.com/wp/wp3106267.jpg);
+  }
+</style>
+<body class=" bdy bg-dark">
 
   <!-- navigation bar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 0, 0);">
+  <nav class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.1);">
     <div class="container-fluid">
       <nav class="navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img class="logo" src="/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            <img class="logo" src="/Project-SIH/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
           </a>
         </div>
       </nav>
@@ -60,14 +53,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/HTML files/04-main.html"
+            <a class="nav-link active" aria-current="page" href="/Project-SIH/HTML files/04-main.html"
               style="color: white;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/HTML files/06-why.html" style="color: white;">Why</a>
+            <a class="nav-link" href="/Project-SIH/HTML files/06-why.html" style="color: white;">Why</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/HTML files/05-about.html" style="color: white;">About</a>
+            <a class="nav-link" href="/Project-SIH/HTML files/05-about.html" style="color: white;">About</a>
           </li>
         </ul>
       </div>
@@ -90,7 +83,7 @@
           <h3>Are You Sure You Want To Log Out</h3>
         </div>
         <div class="modal-footer">
-          <a type="button" class="btn btn-success" href="/HTML files/01-first.html">Log out</a>
+          <a type="button" class="btn btn-success" href="/Project-SIH/HTML files/01-first.html">Log out</a>
         </div>
       </div>
     </div>
@@ -101,14 +94,17 @@
     <div class="p-5 text-center rounded-5 ">
       <h1 class="text-emphasis text-white">Welcome To Third Eye</h1>
       <p class="lead text-emphasis text-white"><strong>
-        <br>
-        In the digital age, our online presence has become an integral part of our lives. Whether for social networking,
-        dating, or professional networking, we rely on online profiles to connect with others. However, with the rise of
-        online interactions, so too has the prevalence of fake profiles and identity theft.
-        <br><br>
-        We understand the need for a safer online experience, which is why we are proud to introduce ThirdEye – the
-        cutting-edge application designed to detect and report fake profiles, ensuring a more secure and genuine online
-        community for all.
+          <br>
+          In the digital age, our online presence has become an integral part of our lives. Whether for social
+          networking,
+          dating, or professional networking, we rely on online profiles to connect with others. However, with the rise
+          of
+          online interactions, so too has the prevalence of fake profiles and identity theft.
+          <br><br>
+          We understand the need for a safer online experience, which is why we are proud to introduce ThirdEye – the
+          cutting-edge application designed to detect and report fake profiles, ensuring a more secure and genuine
+          online
+          community for all.
         </strong>
       </p>
     </div>
@@ -146,15 +142,15 @@
 
           </div>
           <div class="col-12">
-            <div class="input-group">
-              <span class="input-group-text text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">Platform
+            <div class="input-group d-flex">
+              <span class="input-group-text bg-dark p-2 text-white bg-opacity-75" id="inputGroupPrepend2">Platform
                 *</span>
-              <select class="form-select" id="validationDefault04" required>
-                <option>...</option>
-                <option>Facebook</option>
-                <option>Instagram</option>
-                <option>Snapchat</option>
-                <option>X</option>
+              <select class="select-box" id="validationDefault04" required>
+                <option class="box"></option>
+                <option class="box">Facebook</option>
+                <option class="box">Instagram</option>
+                <option class="box">Snapchat</option>
+                <option class="box">X</option>
               </select>
             </div>
             <div>
@@ -171,19 +167,18 @@
 
 
   <!-- Footer -->
-  <div class="footer">
+  <div class="footer " style="background-color: rgba(0, 0, 0, 0);">
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/HTML files/01-first.html"
-                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <img src="/images/logo.png" class="footer-logo rounded-5 p-2">
-                </a>
-                <span class="mb-3 mb-md-0 text-white">Made By : Byte Benders </span>
-            </div>
-        </footer>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/Project-SIH/HTML files/01-first.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="/Project-SIH/images/logo.png" class="footer-logo rounded-5 p-2">
+          </a>
+          <span class="mb-3 mb-md-0 text-white">Made By : Byte Benders </span>
+        </div>
+      </footer>
     </div>
-</div>
+  </div>
 </body>
 
 </html>
